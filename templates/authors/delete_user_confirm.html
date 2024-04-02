@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Delete Confirm page</h2>
+    <form method='post'>
+        {% csrf_token %}
+
+        <button type="submit" class='btn btn-lg btn-danger'><i class="fa-solid fa-user-xmark"></i>Delete account</button>
+    </form>
+{% endblock content %}
